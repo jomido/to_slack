@@ -52,7 +52,15 @@ class To:
 
     def __getitem__(self, item):
 
-        return getattr(self, item)
+        if isinstance(item, (list, tuple)):
+
+            for i in item:
+                self.__getattr__(i)
+
+        else:
+            self.__getattr__(item)
+
+        return self
 
     def _verify(self):
 

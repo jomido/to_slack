@@ -78,6 +78,22 @@ to = To({
 to['so-hyphen'].sam.no.regrets('hi all')
 ```
 
+## what if I don't know who to send to until run time?
+
+```python
+from to_slack import To
+
+to = To({
+    'no.regrets': '<hook>',
+    'sam': '<hook>',
+    'so-hyphen': '<hook>'
+})
+
+recipients = ['no.regrets', 'sam', 'so-hypen']
+
+to[recipients]('still no regrets')
+```
+
 ## installation
 
  * copy this file wherever you like (sorry, no PyPI)
