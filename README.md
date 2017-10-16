@@ -41,7 +41,7 @@ to_peeps('hey')
 to_peeps('grass')
 ```
 
-## wait, I have a '.' in my username
+## wait, I have a `.` in my username
 
 Sure:
 
@@ -62,7 +62,7 @@ to.no('Hello')  # Exception: Invalid target: "no".
 to.no.regets.man('Hello')  # Exception: Invalid target: "man".
 ```
 
-## wait, I have a '-' in my username
+## wait, I have a `-` in my username
 
 That's more problematic, but ok:
 
