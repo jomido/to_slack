@@ -108,14 +108,3 @@ def freeze(to):
         To._send_all,
         targets
     )
-
-
-if __name__ == "__main__":
-
-    hook = 'T03SU38LS/B7JC9RT6D/rRSoP9C6AkaZ5capZqyXOgJx'
-
-    to = To({
-        'root': hook
-    })
-
-    to.root('ha!')
